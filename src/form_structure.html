@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/styles.css"> 
     <title>Document</title>
 </head>
 <body>
 
     <!-- Reciever FORM -->
     
-    <form id="reciepient" action="#" method="POST">
+    <form id="reciepient" action="#" method="">
         <div class="">
           <div class="">
             <div class="">
@@ -18,54 +19,83 @@
                 <h2>Reciever Info</h2>
 
                 <div class="">
-                    <label for="recipient-id" class="block text-sm font-medium text-gray-700">Recipient ID</label>
-                    <input type="text" name="recipient-id" id="recipient-id" autocomplete="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                    <label for="receptacle-id" class="">Receptacle ID</label>
+                    <input type="text" placeholder="Scan Item" name="receptacle-id" id="receptacle-id" autocomplete="email" class="">
                   </div>
 
                   <div class="">
-                    <label for="postal-code" class="block text-sm font-medium text-gray-700">Tracking Number</label>
-                    <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                    <label for="postal-code" class="">Tracking Number</label>
+                    <input type="text" placeholder="Scan Item" name="postal-code" id="postal-code" autocomplete="postal-code" class="">
                   </div> 
+                  <div class="">
+                    <label for="first-name" class="">Package Condition</label>
+                    <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="">
+                  </div>
 
               <div class="">
-                <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
-                <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                <label for="first-name" class="">First Name</label>
+                <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="">
               </div>
 
               <div class="">
-                <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
-                <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                <label for="last-name" class="">Last Name</label>
+                <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="">
               </div>
 
              
 
     
               <div class="">
-                <label for="street-address" class="block text-sm font-medium text-gray-700">Street address</label>
-                <input type="text" name="street-address" id="street-address" autocomplete="street-address" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                <label for="street-address" class="">Street Address</label>
+                <input type="text" name="street-address" id="street-address" autocomplete="street-address" class="">
+              </div>
+              <div class="">
+                <label for="po-box" class="">P.O. Box</label>
+                <input type="text" name="po-box" id="po-box" autocomplete="street-address" class="">
               </div>
 
               <div class="">
-                <label for="city" class="block text-sm font-medium text-gray-700">City/Village</label>
-                <input type="text" name="city" id="city" autocomplete="address-level2" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                <label for="city" class="">City/Village</label>
+                <input type="text" name="city" id="city" autocomplete="address-level2" class="">
               </div>
 
               <div class="">
-                <label for="region" class="block text-sm font-medium text-gray-700">Parish</label>
-                <input type="text" name="region" id="region" autocomplete="address-level1" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                <label for="region" class="">Parish</label>
+                
+
+                <select name="cars" id="region">
+                 <option value="select-parish">Select Parish</option>
+                  <option value="st-george">Saint George</option>
+                  <option value="st-john">Saint John</option>
+                  <option value="st-mary">Saint Mary</option>
+                  <option value="st-paul">Saint Paul</option>
+                  <option value="st-peter">Saint Peter</option>
+                  <option value="st-philip">Saint Philip</option>
+                  <option value="barbuda">Barbuda</option>
+                </select> 
+              </div>
+
+              <div class="package-condition-container">
+               <h3>Package Condition</h3>
+                <label for="good" class="">Good</label>
+                <input type="radio" name="condition" id="good"  class="" value="good">
+                <label for="damaged" class="">Damaged</label>
+                <input type="radio" name="condition" id="damaged" class="" value="damaged"> 
+                <label for="violated" class="">Violated</label>
+                <input type="radio" name="condition" id="violated" " class="" value="violated">
               </div>
 
               <!-- #TODO #FUTURE #FEATURE 
              <div class="col-span-6 sm:col-span-3 lg:col-span-2">
-                <label for="postal-code" class="block text-sm font-medium text-gray-700">ZIP / Postal code</label>
-                <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                <label for="postal-code" class="">ZIP / Postal code</label>
+                <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="">
               </div> -->
 
                 
             </div>
           </div>
           <div class="">
-            <button type="submit" class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Save</button>
+            <button type="submit" class="">Save</button>
           </div>
         </div>
       </form>
@@ -73,29 +103,29 @@
       <!--  -->
 
 <!--SENDER FORM -->
-<form id="reciepient" action="#" method="POST">
+<form id="reciepient" action="#" method="">
         <div class="">
           <div class="">
             <div class="">
 
                 <h2>Sender Info</h2>
               <div class="">
-                <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
-                <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                <label for="first-name" class="">First name</label>
+                <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="">
               </div>
 
               <div class="">
-                <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
-                <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                <label for="last-name" class="">Last name</label>
+                <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="">
               </div>
 
               <div class="">
-                <label for="email-address" class="block text-sm font-medium text-gray-700">Email address</label>
-                <input type="text" name="email-address" id="email-address" autocomplete="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                <label for="email-address" class="">Email Address</label>
+                <input type="text" name="email-address" id="email-address" autocomplete="email" class="">
               </div>
 
               <div class="">
-                <label for="country" class="block text-sm font-medium text-gray-700">Country</label>
+                <label for="country" class="">Country</label>
                 
 
 <select id="country" name="country">
@@ -358,31 +388,31 @@
               </div>
 
               <div class="">
-                <label for="street-address" class="block text-sm font-medium text-gray-700">Street address</label>
-                <input type="text" name="street-address" id="street-address" autocomplete="street-address" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                <label for="street-address" class="">Street Address</label>
+                <input type="text" name="street-address" id="street-address" autocomplete="street-address" class="">
               </div>
 
               <div class="">
-                <label for="city" class="block text-sm font-medium text-gray-700">City</label>
-                <input type="text" name="city" id="city" autocomplete="address-level2" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                <label for="city" class="">City</label>
+                <input type="text" name="city" id="city" autocomplete="address-level2" class="">
               </div>
 
               <div class="">
-                <label for="region" class="block text-sm font-medium text-gray-700">State / Province</label>
-                <input type="text" name="region" id="region" autocomplete="address-level1" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                <label for="region" class="">State / Province</label>
+                <input type="text" name="region" id="region" autocomplete="address-level1" class="">
               </div>
 
               <div class="">
-                <label for="postal-code" class="block text-sm font-medium text-gray-700">ZIP / Postal code</label>
-                <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                <label for="postal-code" class="">ZIP / Postal Code</label>
+                <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="">
               </div>
             </div>
           </div>
           <div class="">
-            <button type="submit" class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Save</button>
+            <button type="submit" class="">Save</button>
           </div>
         </div>
       </form>
-
+      <!--SENDER FORM -->
 </body>
 </html>
