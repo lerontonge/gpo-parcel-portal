@@ -1,3 +1,4 @@
+<div class="form-container">
 <form id="reciepient" action="#" method="">
     <div class="">
       <div class="">
@@ -354,3 +355,4 @@
       </div>
     </div>
   </form>
+</div> 
