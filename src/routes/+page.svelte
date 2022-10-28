@@ -1,2 +1,12 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+  import Reciever from '../lib/reciever.svelte';
+  import Sender from '../lib/sender.svelte';
+  const title = 'Parcel App';
+</script>
+
+<svelte:head>
+  <title>{title}</title>
+</svelte:head>
+
+<Reciever />
+<Sender />
